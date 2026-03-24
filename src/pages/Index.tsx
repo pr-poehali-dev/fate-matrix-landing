@@ -432,10 +432,16 @@ export default function Index() {
           <span style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-lg font-light tracking-widest text-[#888]">
             Матрица Судьбы
           </span>
-          <p className="text-[#bbb] text-xs font-light">© 2024 · Все права защищены</p>
-          <div className="flex gap-6">
-            <a href="#service" className="text-xs text-[#888] tracking-wider uppercase hover:text-[#141414] transition-colors">Услуги</a>
-            <a href="#contact" className="text-xs text-[#888] tracking-wider uppercase hover:text-[#141414] transition-colors">Контакты</a>
+          <p className="text-[#bbb] text-xs font-light">© 2025 · Все права защищены</p>
+          <div className="flex items-center gap-6">
+            <a href="https://t.me/Ksenia_pride" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-[#888] tracking-wider uppercase hover:text-[#141414] transition-colors">
+              <Icon name="Send" fallback="Circle" size={14} />
+              Telegram
+            </a>
+            <a href="https://www.instagram.com/kseniapride_?igsh=YmdqZWplajZ6OTl3&utm_source=qr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-[#888] tracking-wider uppercase hover:text-[#141414] transition-colors">
+              <Icon name="Instagram" fallback="Circle" size={14} />
+              Instagram
+            </a>
           </div>
         </div>
       </footer>
