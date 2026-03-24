@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const SPECIALIST_IMG = "https://cdn.poehali.dev/projects/b45c8ccb-8372-4eb8-bfe9-ae55c3d11b73/files/b4462f52-933d-42dd-a8c0-3c77863d95ad.jpg";
+const SPECIALIST_IMG = "https://cdn.poehali.dev/projects/b45c8ccb-8372-4eb8-bfe9-ae55c3d11b73/bucket/cbdc6e76-46b1-4360-9de2-aefdec9033a5.jpeg";
 
 function useReveal() {
   useEffect(() => {
@@ -288,7 +288,7 @@ export default function Index() {
                 <img
                   src={SPECIALIST_IMG}
                   alt="Ксения Прайд — специалист по матрице судьбы"
-                  className="w-full aspect-[3/4] object-cover object-top grayscale"
+                  className="w-full aspect-[3/4] object-cover object-top"
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#edeae3] to-transparent" />
               </div>
