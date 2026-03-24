@@ -258,7 +258,7 @@ export default function Index() {
             <div className="reveal order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(42,55%,52%)" }}>О специалисте</p>
               <h2 style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-5xl font-light mb-8 leading-tight">
-                Мария Светлова
+                Гаврияшева Ксения
               </h2>
               <div className="w-12 h-px mb-8" style={{ backgroundColor: "hsl(42,55%,52%)" }} />
               <p className="text-[#555] font-light leading-relaxed mb-6">
@@ -287,7 +287,7 @@ export default function Index() {
                 <div className="absolute -top-4 -left-4 w-full h-full border opacity-30" style={{ borderColor: "hsl(42,55%,52%)" }} />
                 <img
                   src={SPECIALIST_IMG}
-                  alt="Мария Светлова — специалист по матрице судьбы"
+                  alt="Гаврияшева Ксения — специалист по матрице судьбы"
                   className="w-full aspect-[3/4] object-cover object-top grayscale"
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#edeae3] to-transparent" />
