@@ -4,8 +4,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 97%;
+    --foreground: 0 0% 8%;
+
+    --gold: 42 55% 52%;
+    --gold-light: 42 55% 85%;
+    --stone: 0 0% 94%;
+    --stone-dark: 0 0% 20%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -97,5 +102,65 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Golos Text", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Cormorant Garamond", serif;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(42, 55%, 52%);
+  }
+  .bg-gold {
+    background-color: hsl(42, 55%, 52%);
+  }
+  .border-gold {
+    border-color: hsl(42, 55%, 52%);
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.75s ease,
+      transform 0.75s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .matrix-line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: line-draw 2s ease-out forwards;
+  }
+}
+
+@keyframes line-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
