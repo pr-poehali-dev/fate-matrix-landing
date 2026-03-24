@@ -308,6 +308,84 @@ export default function Index() {
         </div>
       </section>
 
+      {/* PRICING */}
+      <section className="py-28 bg-[#f7f6f3]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-20 reveal">
+            <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(42,55%,52%)" }}>Стоимость</p>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-5xl md:text-6xl font-light">
+              Форматы и цены
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Card 1 */}
+            <div className="reveal border border-[#e8e5de] p-10 hover:border-[hsl(42,55%,52%)] transition-colors duration-300 flex flex-col">
+              <div className="mb-6">
+                <p className="text-xs tracking-[0.25em] uppercase text-[#aaa] mb-3">Полный разбор</p>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-3xl font-light text-[#141414] mb-1">Матрица судьбы</h3>
+              </div>
+              <div className="w-8 h-px mb-8" style={{ backgroundColor: "hsl(42,55%,52%)" }} />
+              <ul className="space-y-3 mb-10 flex-1">
+                {[
+                  "Текстовый формат — более 50 страниц",
+                  "Аудио формат — 60 минут",
+                  "Все сферы жизни в одном разборе",
+                  "Отношения, карьера, здоровье, таланты",
+                  "Кармические задачи и рекомендации",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-[#555] font-light">
+                    <span style={{ color: "hsl(42,55%,52%)" }} className="mt-0.5 flex-shrink-0">✦</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex items-end justify-between">
+                <div>
+                  <div style={{ fontFamily: "'Cormorant Garamond', serif", color: "hsl(42,55%,52%)" }} className="text-5xl font-light">3 000 ₽</div>
+                </div>
+                <a href="#contact" className="bg-[#141414] text-[#f7f6f3] px-8 py-3 text-xs tracking-widest uppercase hover:bg-[hsl(42,55%,42%)] transition-all duration-300">
+                  Записаться
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="reveal border border-[#e8e5de] p-10 hover:border-[hsl(42,55%,52%)] transition-colors duration-300 flex flex-col" style={{ transitionDelay: "0.12s" }}>
+              <div className="mb-6">
+                <p className="text-xs tracking-[0.25em] uppercase text-[#aaa] mb-3">Точечный разбор</p>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif" }} className="text-3xl font-light text-[#141414] mb-1">Один блок на выбор</h3>
+              </div>
+              <div className="w-8 h-px mb-8" style={{ backgroundColor: "hsl(42,55%,52%)" }} />
+              <ul className="space-y-3 mb-6 flex-1">
+                {[
+                  "Текстовый формат",
+                  "Глубокий анализ одной сферы",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-[#555] font-light">
+                    <span style={{ color: "hsl(42,55%,52%)" }} className="mt-0.5 flex-shrink-0">✦</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-8">
+                {["Отношения", "Карьера", "Зона комфорта", "Визитная карточка", "Таланты", "Карма", "Карта здоровья"].map((tag) => (
+                  <span key={tag} className="border border-[#e8e5de] text-[#888] text-xs px-3 py-1 tracking-wide">{tag}</span>
+                ))}
+              </div>
+              <div className="flex items-end justify-between">
+                <div>
+                  <div style={{ fontFamily: "'Cormorant Garamond', serif", color: "hsl(42,55%,52%)" }} className="text-5xl font-light">500 ₽</div>
+                </div>
+                <a href="#contact" className="bg-[#141414] text-[#f7f6f3] px-8 py-3 text-xs tracking-widest uppercase hover:bg-[hsl(42,55%,42%)] transition-all duration-300">
+                  Записаться
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* REVIEWS */}
       <section className="py-28 bg-[#141414] text-[#f7f6f3]">
         <div className="max-w-6xl mx-auto px-6">
